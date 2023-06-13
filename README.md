@@ -5,37 +5,6 @@ NIM     : 312210222
 Kelas   : TI.22.A2
 ```
 # ERD KARYAWAN
-                 +----------------+
-                 |    Departemen  |
-                 +----------------+
-                 | id (PK)        |
-                 | nama_departemen|
-                 +----------------+
-                        |       ^
-                        |       |
-         +--------------+       +--------------+
-         |                                     |
-         |                                     |
-+----------------+                  +-----------------+
-|    Karyawan    |                  |    Proyek       |
-+----------------+                  +-----------------+
-| id (PK)        |                  | id (PK)         |
-| nama_karyawan  |                  | nama_proyek     |
-| departemen_id  |------------------| departemen_id   |
-| manager_id     |                  +-----------------+
-+----------------+
-       |  ^
-       |  |
-       |  |
-+--------------+
-|   Supervisor |
-+--------------+
-| id (PK)      |
-| departemen_id|
-| karyawan_id  |
-+--------------+
-
-
 Berikut adalah representasi Entity Relationship Diagram (ERD) berdasarkan deskripsi yang Anda berikan:
 
 ```
